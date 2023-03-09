@@ -1,15 +1,15 @@
 class World
 {
-    constructor(sky, land, sea, wind, temperature, humidity, size, pressure)
+    constructor()
     {
-        this.sky = sky;
-        this.land = land;
-        this.sea = sea;
-        this.wind = wind;
-        this.temperature = temperature;
-        this.humidity = humidity;
-        this.size = size;
-        this.pressure = pressure;
+        this.sky;
+        this.land;
+        this.sea;
+        this.wind;
+        this.temperature;
+        this.humidity;
+        this.size;
+        this.pressure;
     }
 
     getSky()
@@ -82,9 +82,9 @@ class World
         this.humidity = humidity;
     }
 
-    setSize(size)
+    setSize(a, b)
     {
-        this.size = size;
+        this.size = this.calculateSize(a, b);
     }
 
     setPressure(pressure)
