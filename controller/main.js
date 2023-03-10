@@ -1,5 +1,5 @@
-const World = require('./world');
-const Citizen = require('./citizen');
+const World = require('../model/world');
+const Citizen = require('../model/citizen');
 
 let world = new World();
 let citizen = new Citizen('001', 'Shorlo', 'SB', 'Planet');
